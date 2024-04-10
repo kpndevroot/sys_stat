@@ -1,0 +1,18 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "os-toolbox": "^0.2.10",
+    "os-utils": "^0.0.14",
+    "speedtest-net": "^2.2.0"
+  }
+}
