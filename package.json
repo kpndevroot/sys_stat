@@ -11,6 +11,8 @@
   "description": "",
   "dependencies": {
     "clear": "^0.1.0",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.13",
     "os-toolbox": "^0.2.10",
     "os-utils": "^0.0.14",
     "speedtest-net": "^2.2.0"

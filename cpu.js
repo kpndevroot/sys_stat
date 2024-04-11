@@ -1,11 +1,12 @@
 const os = require("os");
 const clear = require("clear"); // For clearing the terminal (optional)
 const { cpuLoad } = require("os-toolbox");
+const sentMail = require("./helper/mailer.js");
 
 let cpuTriggerCount = 0;
 let ramTriggerCount = 0;
 const threshold = 50; // CPU and RAM usage threshold (adjustable)
-const triggerDuration = 3000; // Minimum duration above threshold (milliseconds)
+const triggerDuration = 5000; // Minimum duration above threshold (milliseconds)
 
 async function monitorSystem() {
   try {
@@ -57,6 +58,7 @@ async function monitorSystem() {
 // Implement your cpuTrigger function here
 function cpuTrigger() {
   console.log("CPU Usage Above 50% for 3 seconds!");
+  sentMail("cpu usage", "cpu usage is above 50% for 5 seconds");
 }
 
 // Implement your ramTrigger function here
